@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/botstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>التسجيل</title>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-2" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            asso-femininelisafaawalkhayer
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" dir="rtl">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="barber.html">ورشة الحلاقة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bolanger.html">ورشة الطبخ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="khiata.html">ورشة الخياطة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">الدورات التكوينية حول الوالدية الإيجابية </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Children-with-Disabilities.html">برنامج تمدرس الأطفال في وضعية اعاقة  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+    <body >
+        <div class="container mt-5" dir="rtl">
+            <h2 class="mb-4">نموذج التسجيل</h2>
+            <form>
+                <div class="form-group mt-3">
+                    <label for="fullName">الاسم الكامل</label>
+                    <input type="text" class="form-control mt-2" id="fullName" placeholder="أدخل الاسم الكامل">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="phone">رقم الهاتف</label>
+                    <input dir="rtl" type="tel" class="form-control mt-2" id="phone" placeholder="أدخل رقم الهاتف">
+                </div>
+                <div class="form-group mt-3">
+                    <label>الجنس</label>
+                    <div class="custom-control custom-radio mt-2">
+                        <input type="radio" id="male" name="gender" class="custom-control-input" value="ذكر">
+                        <label class="custom-control-label" for="male">ذكر</label>
+                    </div>
+                    <div class="custom-control custom-radio mt-2">
+                        <input type="radio" id="female" name="gender" class="custom-control-input" value="أنثى">
+                        <label class="custom-control-label" for="female">أنثى</label>
+                    </div>
+                </div>
+                <div class="form-group mt-3" >
+                    <label for="workshop">اختر الورشة</label>
+                    <select class="form-control mt-2" id="workshop">
+                      <option>اختار ورشة</option>
+                        <option>ورشة الحلاقة</option>
+                        <option>ورشة الخياطة</option>
+                        <option>ورشة الطبخ و الحلويات</option>
+                    </select>
+                </div>
+                <button id="send-whatsapp" class="btn btn-primary mt-3">تسجيل</button>
+            </form>
+        </div>
+    
+      
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/botstrap.js"></script>
+</body>
+</html>
