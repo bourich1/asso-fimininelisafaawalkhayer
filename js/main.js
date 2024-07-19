@@ -12,7 +12,7 @@ function sendProductInfo() {
     ||| الورشة      : ${workshop}   |||
     `
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '212647262361'; // Your WhatsApp number with country code
+    const phoneNumber = '212642369693'; // Your WhatsApp number with country code
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, '_blank');
