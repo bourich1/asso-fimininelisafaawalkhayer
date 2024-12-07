@@ -1,0 +1,112 @@
+/* إعدادات عامة */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* رأس الصفحة */
+  .header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* حاوية المقالات */
+  .articles-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* تصميم المقال */
+  .article{
+    text-align: center !important;
+  }
+  .article h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .article-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .article p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  /* تصميم الصور */
+  .article-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .article-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .article-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* مربع التكبير */
+  .image-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  .image-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  hr{
+    margin-top: 20px;
+    padding: 2px 0;
+    background-color: rgb(53, 53, 53);
+  }

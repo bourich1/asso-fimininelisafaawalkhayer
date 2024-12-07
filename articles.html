@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مقال بتصميم جميل</title>
+  <link rel="stylesheet" href="css/article.css">
+</head>
+<body>
+  <header class="header">
+    <h1>المقالات</h1>
+  </header>
+
+  <main class="articles-container">
+    <!-- بداية المقال =========================================================-->
+    <article class="article">
+        <!-- عنوان -->
+      <h2>عنوان المقال</h2>
+      <!-- تاريخ الحدت -->
+      <p class="article-date">تاريخ النشر: 2024-12-06</p>
+      <!-- مقال -->
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis fugit quasi non ratione voluptate, quidem, vel dolorum cupiditate maiores laborum quo atque placeat quibusdam impedit. Veniam velit atque quos minima sed sequi inventore nesciunt, tempore dolorem fugit dicta beatae quo excepturi accusamus eos reiciendis eligendi, optio incidunt dolorum eius magnam quis. Vel atque tempora autem expedita enim. Possimus, voluptas reiciendis iste impedit eaque numquam minus iure vel alias tenetur quis, reprehenderit laboriosam et, est rem aliquid beatae facere. Qui, modi.</p>
+      <!-- صواار -->
+      <div class="article-images">
+        <img src="img article/img1.jfif" alt="صورة 1" class="zoomable">
+        <img src="img article/img2.jfif" alt="صورة 2" class="zoomable">
+        <img src="img article/img3.jfif" alt="صورة 3" class="zoomable">
+        <img src="img article/img4.jfif" alt="صورة 4" class="zoomable">
+      </div>
+    </article>
+    <hr>
+     <!-- نهاية المقال ===========================================================-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <!-- مربع التكبير -->
+  <div class="image-popup" id="imagePopup">
+    <span class="close" id="closePopup">&times;</span>
+    <img id="popupImage" alt="تكبير الصورة">
+  </div>
+
+  <script>
+    // جلب العناصر
+const zoomableImages = document.querySelectorAll('.zoomable');
+const imagePopup = document.getElementById('imagePopup');
+const popupImage = document.getElementById('popupImage');
+const closePopup = document.getElementById('closePopup');
+
+// عرض الصورة عند الضغط
+zoomableImages.forEach(image => {
+  image.addEventListener('click', () => {
+    popupImage.src = image.src;
+    imagePopup.style.display = 'flex';
+  });
+});
+
+// إغلاق مربع التكبير
+closePopup.addEventListener('click', () => {
+  imagePopup.style.display = 'none';
+});
+
+  </script>
+</body>
+</html>
